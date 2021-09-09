@@ -9,7 +9,7 @@ function Homebtn(btn) {
 
 function mainListener(btn, target1, target2, div, contactButton) {
     btn.addEventListener('click', (e) => {
-        // console.log(e.target)
+        
         if (e.target === contactButton) {
             contact();
          } else if(e.target === target1 || e.target === target2) {
@@ -20,8 +20,5 @@ function mainListener(btn, target1, target2, div, contactButton) {
     });
 }
 
-// function contactBtn(btn) {
-//     btn.addEventListener('click', () => {});
-// }
 
 export {Homebtn, mainListener};

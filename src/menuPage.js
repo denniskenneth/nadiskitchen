@@ -96,7 +96,7 @@ function menu() {
      ******************************************************************/
  
  
-    //  console.log('Menu Page');
+    
      centerBodyDiv.append(pageTitle, mainBody)
 }
 

@@ -95,8 +95,6 @@ function contact() {
     MAINBODY ----- SUB-DIVS 
     ******************************************************************/
 
-
-    console.log('Contact Page');
     centerBodyDiv.append(pageTitle, mainBody)
 }
 

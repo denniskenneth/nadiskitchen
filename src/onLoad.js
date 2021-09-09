@@ -1,5 +1,4 @@
 // IMPORRTS
-// import activeNav from './activeNav';
 import { Homebtn, mainListener } from './eventListeners';
 
 
@@ -36,7 +35,6 @@ rightBodyDiv.classList.add('right');
 // HEAD
 
 logoHolder.innerHTML = "<h3>REPAG</h3>";
-// navHolder.innerHTML = `<a href="./index.html">Home</a><a href="#" class="navMenu">Menu</a><a>Contact</a>`;
 var homeBtn = document.createElement('a');
 var menuBtn = document.createElement('a');
 var contactBtn = document.createElement('a');
@@ -119,12 +117,6 @@ footerTxt.innerHTML = `Build By `;
 
 
 
-// LEFT DIV
-// leftBodyDiv.innerHTML = "<h1>Welcome to the Home of Amazing Food</h1>";
-// RIGHT DIV
-// rightBodyDiv.innerHTML = ``;
-
-
 // APPENDING DIVS
 // HEAD
 headerDiv.append( navHolder);
@@ -142,48 +134,12 @@ contentDiv.append(headerDiv, bodyDiv, footerDiv);
 
 //Event Listeners
 Homebtn(homeBtn)
-// homeBtn.addEventListener('click', () => {
-//     window.location.reload(true);
-// })
-
-mainListener(contentDiv, menuBtn, seeMenuBtn, centerBodyDiv, contactBtn)
-
-// contentDiv.addEventListener('click', e => {
-//     if(e.target !== menuBtn && e.target !== seeMenuBtn) {
-//         return
-//     } 
-//         centerBodyDiv.innerHTML = ' ';
-//         menu();
-// })
 
 
-// console.log([homeBtn, menuBtn, contactBtn])
-
-    // element.addEventListener('click', ()=>{
-    //     element.classList.add('active');
-    //     var current = document.querySelectorAll('active');
-    //     if (current.length > 1 ){
-    //         current[0].classList = current[0].classList.replace(' active', '');
-    //     }
-        
-        
-    // });
+mainListener(contentDiv, menuBtn, seeMenuBtn, centerBodyDiv, contactBtn);
 
 
 }
-// function setActive(btn) {
-//     const navBtn = document.querySelectorAll('navbtn');
-//     console.log(navBtn)
-//     navBtn.forEach(nav => {
-//         if (nav !== btn) {
-//             nav.classList.remove('active');
-//         }
-//     })
-//     btn.classList.add('active');
-// }
-
-// console.log(onLoad());
-
 
 export default onLoad;
 
